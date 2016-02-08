@@ -26,35 +26,6 @@ for segment in segments:
     full_track = full_track.append(cut_audio)
     
 full_track.export(mix['title'] + '.mp3', format='mp3')
-  
-      
-    
-# def create_cuts(track_list):
-
-#     cuts = {}
-    
-#     for track_dict in track_list:
-    
-#         song = AudioSegment.from_file(track_dict['file'], format='mp3')
-        
-#         for cut in track_dict['cuts']:
-#             track = cut['track']
-#             mix = cut['mix']
-#             print(track['start'])
-#             cuts[str(mix['start'])] = song[track['start']:(track['end']+1)]
-            
-#     return cuts
-        
-# 
-    
-# track_cuts = create_cuts(config)
-
-# full_track = AudioSegment.empty()
-
-# for (start, cut) in track_cuts.iteritems():
-#     full_track = full_track.append(cut)
-    
-# full_track.export('test.mp3', format='mp3') 
 
 
 
